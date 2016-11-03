@@ -1,7 +1,7 @@
 ﻿/* 2016-11-03
  * ----------
- * This project demonstrates all (C# 6) the methods of the static
- * System.Linq.Enumerable class. */
+ * This project demonstrates all (C# 6) 99 (overloads counted) methods of
+ * the static System.Linq.Enumerable class. */
 
 using System;
 using System.Linq;
