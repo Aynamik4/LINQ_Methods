@@ -1,4 +1,7 @@
-﻿using System;
+﻿/* This project demonstrates all (C# 6) the methods of the static
+ * Enumerable class. */
+
+using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Collections;
