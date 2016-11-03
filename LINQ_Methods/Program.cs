@@ -1,4 +1,6 @@
-﻿/* This project demonstrates all (C# 6) the methods of the static
+﻿/* 2016-11-03
+ * ----------
+ * This project demonstrates all (C# 6) the methods of the static
  * System.Linq.Enumerable class. */
 
 using System;
