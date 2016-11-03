@@ -1,5 +1,5 @@
 ﻿/* This project demonstrates all (C# 6) the methods of the static
- * Enumerable class. */
+ * System.Linq.Enumerable class. */
 
 using System;
 using System.Linq;
