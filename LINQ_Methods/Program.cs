@@ -336,7 +336,7 @@ namespace LINQ_Methods
             foreach (var item in resultSet)
                 WriteLine($"{item.f1} {item.f2} {item.f3}");
 
-            // Git Test...
+            // Git Test... Mera test
         }
 
         private static void ThenBy_Ovrld_01()
