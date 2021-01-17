@@ -3,7 +3,7 @@
  * See LinqPad (program tips från Anders!)
  * This project demonstrates all (C# 6) 99 (overloads counted) methods of
  * the static System.Linq.Enumerable class.
- * Alright!!!
+ * 2020-01-17: Added to GitHub Desktop
  */
 
 using System;
