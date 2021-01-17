@@ -83,12 +83,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\MyApplications\HJLibrarys\UtilsLibary\UtilsLibrary.csproj">
-      <Project>{e4378d58-40d5-49b6-b03b-4aa18ce94288}</Project>
-      <Name>UtilsLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
@@ -99,6 +93,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\MyApplications\UtilsSolution\UtilsLibrary\UtilsLibrary.csproj">
+      <Project>{ebb89d74-0172-43d1-a1ad-0d09348c53b1}</Project>
+      <Name>UtilsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,10 @@
 ﻿/* 2016-11-03
  * ----------
+ * See LinqPad (program tips från Anders!)
  * This project demonstrates all (C# 6) 99 (overloads counted) methods of
- * the static System.Linq.Enumerable class. */
+ * the static System.Linq.Enumerable class.
+ * Alright!!!
+ */
 
 using System;
 using System.Linq;
@@ -25,8 +28,8 @@ namespace LINQ_Methods
             //ToArray(persons);
             #endregion ToArray()
 
-            #region TList()
-            //ToList(persons);
+            #region ToList()
+            ToList(persons);
             #endregion TList()
 
             #region ToDictionary()
@@ -141,7 +144,7 @@ namespace LINQ_Methods
             #endregion GroupBy
 
             #region Special: Anonymous Method Instead Of Lambda
-            //AnonymousMethodInsteadOfLambda(persons);
+            AnonymousMethodInsteadOfLambda(persons);
             #endregion Special: Anonymous Method Instead Of Lambda
 
             #region Join
@@ -203,7 +206,7 @@ namespace LINQ_Methods
             #endregion
 
             #region SelectMany
-            //SelectMany_Ovrld_01(persons);
+            SelectMany_Ovrld_01(persons);
             //SelectInsteadOfSelectMany(persons);
             //SelectMany_Ovrld_03(persons);
             //SelectMany_Ovrld_02(persons);
@@ -211,27 +214,27 @@ namespace LINQ_Methods
             #endregion
 
             #region SequenceEqual
-            //SequenceEqual_Ovrld_01(persons);
-            //SequenceEqual_Ovrld_02(persons);
+            SequenceEqual_Ovrld_01(persons);
+            SequenceEqual_Ovrld_02(persons);
             #endregion
 
             #region Single
-            //Single_Ovrld_01();
+            Single_Ovrld_01();
             //Single_Ovrld_02();
             #endregion
 
             #region SingleOrDefault
-            //SingleOrDefault_Ovrld_01(persons);
+            SingleOrDefault_Ovrld_01(persons);
             //SingleOrDefault_Ovrld_02(persons);
             #endregion
 
             #region Skip
-            //Skip(persons);
+            Skip(persons);
             #endregion
 
             #region SkipWhile
-            //SkipWhile_Ovrld_01();
-            //SkipWhile_Ovrld_02();
+            SkipWhile_Ovrld_01();
+            SkipWhile_Ovrld_02();
             #endregion
 
             #region Sum
@@ -243,8 +246,8 @@ namespace LINQ_Methods
             #endregion
 
             #region TakeWhile
-            //TakeWhile_Ovrld_01();
-            //TakeWhile_Ovrld_02();
+            TakeWhile_Ovrld_01();
+            TakeWhile_Ovrld_02();
             #endregion
 
             #region Union
@@ -266,7 +269,7 @@ namespace LINQ_Methods
             #endregion
 
             #region Range
-            //Range();
+            Range();
             #endregion
 
             #region Repeat
@@ -851,7 +854,8 @@ namespace LINQ_Methods
             /*
              * Returns the ONLY element of a sequence, and throws an
              * exception if there is not exactly one element in the
-             * sequence.
+             * sequence. That is, if two or more elements satisfies the
+             * condition an exception is thrown.
              */
 
             Car[] cars = new Car[]
@@ -941,6 +945,7 @@ namespace LINQ_Methods
             else
                 WriteLine("Sequences NOT equal!");
         }
+
         private static void SequenceEqual_Ovrld_02(List<Person> persons)
         {
             /*
@@ -991,7 +996,7 @@ namespace LINQ_Methods
              * owner has a list of owned cars. By using the SelectMany
              * method we can create a list of all cars from all owners.
              * 
-             * When can accomplish this by using the Select method as well.
+             * We can accomplish this by using the Select method as well.
              * However, using SelectMany is more convenient. See the
              * SelectInsteadOfSelectMany method.
              */
@@ -2761,8 +2766,6 @@ namespace LINQ_Methods
         }
         private static void ToLookup_Ovrld_04(IEnumerable<Person> persons)
         {
-            KeyClass keyClass = new KeyClass("");
-
             /* Param 1:
              * Determines the key for each item in the Lookup. Can be
              * anything and doesn't have to be unique. In this case the key
@@ -2783,6 +2786,8 @@ namespace LINQ_Methods
              * determine how the keys can be compared. I.e. this parameter
              * isn't necessary if the key is a value type such as string,
              * int, etc.*/
+
+            KeyClass keyClass = new KeyClass("");
 
             ILookup<KeyClass, string> resultSet = persons
                 .ToLookup(p =>
