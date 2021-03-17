@@ -29,7 +29,7 @@ namespace LINQ_Methods
             #endregion ToArray()
 
             #region ToList()
-            ToList(persons);
+            //ToList(persons);
             #endregion TList()
 
             #region ToDictionary()
@@ -66,7 +66,7 @@ namespace LINQ_Methods
             #endregion AsEnumerable
 
             #region AsParallel
-            //AsParallel(persons);
+            AsParallel(persons);
             #endregion AsParallel
 
             #region AsQueryable
@@ -144,7 +144,7 @@ namespace LINQ_Methods
             #endregion GroupBy
 
             #region Special: Anonymous Method Instead Of Lambda
-            AnonymousMethodInsteadOfLambda(persons);
+            //AnonymousMethodInsteadOfLambda(persons);
             #endregion Special: Anonymous Method Instead Of Lambda
 
             #region Join
@@ -206,7 +206,7 @@ namespace LINQ_Methods
             #endregion
 
             #region SelectMany
-            SelectMany_Ovrld_01(persons);
+            //SelectMany_Ovrld_01(persons);
             //SelectInsteadOfSelectMany(persons);
             //SelectMany_Ovrld_03(persons);
             //SelectMany_Ovrld_02(persons);
@@ -214,27 +214,27 @@ namespace LINQ_Methods
             #endregion
 
             #region SequenceEqual
-            SequenceEqual_Ovrld_01(persons);
-            SequenceEqual_Ovrld_02(persons);
+            //SequenceEqual_Ovrld_01(persons);
+            //SequenceEqual_Ovrld_02(persons);
             #endregion
 
             #region Single
-            Single_Ovrld_01();
+            //Single_Ovrld_01();
             //Single_Ovrld_02();
             #endregion
 
             #region SingleOrDefault
-            SingleOrDefault_Ovrld_01(persons);
+            //SingleOrDefault_Ovrld_01(persons);
             //SingleOrDefault_Ovrld_02(persons);
             #endregion
 
             #region Skip
-            Skip(persons);
+            //Skip(persons);
             #endregion
 
             #region SkipWhile
-            SkipWhile_Ovrld_01();
-            SkipWhile_Ovrld_02();
+            //SkipWhile_Ovrld_01();
+            //SkipWhile_Ovrld_02();
             #endregion
 
             #region Sum
@@ -246,8 +246,8 @@ namespace LINQ_Methods
             #endregion
 
             #region TakeWhile
-            TakeWhile_Ovrld_01();
-            TakeWhile_Ovrld_02();
+            //TakeWhile_Ovrld_01();
+            //TakeWhile_Ovrld_02();
             #endregion
 
             #region Union
@@ -269,7 +269,7 @@ namespace LINQ_Methods
             #endregion
 
             #region Range
-            Range();
+            //Range();
             #endregion
 
             #region Repeat
@@ -2429,7 +2429,7 @@ namespace LINQ_Methods
             // Enables parallelization of a query.
 
             var resultSet = persons
-                .AsParallel()
+                //.AsParallel()
                 .Select(p =>
                 {
                     WriteLine("Sleeping...");
